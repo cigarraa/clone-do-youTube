@@ -1,0 +1,174 @@
+body{
+    background: #fff;
+    display: grid;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.cabecario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+#logo {
+    width: 40px;
+}
+
+.pesquisa {
+    border: 1px solid #3f3f3f;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.pesquisa-micro{
+    display: inline-flex;
+}
+
+#space-logo-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#space-logo-menu img {
+    display: block;
+    height: 30px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.menu-lateral {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.menu-lateral button{
+    border: none;
+    background: transparent;
+}
+
+main {
+    grid-area: main;
+}
+
+.criar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.plus {
+    border: 1px solid transparent;
+    background: rgb(221, 212, 212);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.plus button {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+.user {
+    width: 35px;          
+    height: 35px;         
+    border-radius: 50%; 
+    object-fit: cover;    
+    cursor: pointer;      
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.video {
+    font-family: Arial, sans-serif;
+}
+
+.thumb {
+    width: 350px;
+    border: 10px;
+    cursor: pointer;
+    transition: tranform 0.3s;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px;
+  gap: 10px;
+}
+
+.perfil {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.titulo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f0f0f;
+  margin: 0;
+}
+
+.canal, .views {
+  font-size: 13px;
+  color: #606060;
+  margin: 2px 0 0;
+}
+
+.perfil {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.titulo.pequeno {
+  font-size: 9px;
+}
+
+
+
+
+
+
+
